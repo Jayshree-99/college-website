@@ -1,0 +1,105 @@
+<html>
+<head>
+<script type="text/javascript"lang="javascript">
+var i=0;
+function changeImage()
+{
+ 
+   var arr=["url('matoshriclg.png')","url('clg3.jpg')","url('clg4.jpg')","url('clg5.jpg')","url('clg6.jpg')","url('clg7.jpg')","url('clg2.jpg')",];
+   
+   var x=document.getElementById('header');
+    //x.style.backgroundRepeat='no-repeat';
+	
+   x.style.backgroundImage=arr[i];
+ x.style.backgroundImage.height="100%";
+	x.style.backgroundImage.width="100%";
+   
+   i++;
+   if(i==7)
+   i=0;
+}
+
+</script>
+<style>
+#demo
+{
+
+height:30%;
+width:20%;
+}
+
+
+#table{
+margin-top:10px;
+border:2px;
+
+}
+#p{
+    font-family: 'Georgia', serif;
+}
+#header{
+height:170px;
+width:100%;
+background-color:pink;
+}
+#welcome{
+font-size:40px;
+font-family:Tahoma,sans-serif
+}
+
+#dropdown-toggle {
+    white-space: nowrap;
+	width:20px;
+	height:20px;
+}
+
+
+</style>
+</head>
+<title> Matoshri college of enginerring  </title>
+<body onload="setInterval(changeImage,1000)">
+<center><i><h1 style="color:maroon;font-size:50px">Matoshri College Of Engineering</h1></i></center>
+<div id="header">
+<img src="logo.png" style="height:150px;width:150px;float:left">
+
+</div>
+
+<table id="tabel" >
+<tr><td>
+<b><label style="padding-left:5px"> HOME</a></label></b>
+<b><label style="padding-left:10px"> <a href="about.html"> ABOUT </a> </label></b>
+
+<b><label style="padding-left:20px"> <a href="acadmic.html">  ACADMIC </a></label></b>
+<select id="dropdown-toggle" onchange="location=this.value">
+<option value="welcome.html">computer enginerring</option>
+<option value="welcome.html">electronics enginerring</option>
+<option value="welcome.html">IT enginerring</option>
+<option value="welcome.html">mechanical enginerring</option>
+<option value="welcome.html"> civil enginerring</option>
+<option value="welcome.html">electrical enginerring</option>
+
+</select>
+
+<b><label style="padding-left:25px"> <a href="admission.html"> ADMISSION </a></label> </b>
+<b><label style="padding-left:28px"> <a href="administration.html"> ADMINISTRATION </a></label> </b>
+<b><label style="padding-left:33px"> <a href="training and placement.html"> TRAINING AND PLACEMENT </a></label> </b>
+<b><label style="padding-left:35px"> <a href="alumini.html"> ALUMINI </a></label> </b>
+<b><label style="padding-left:39px"> <a href="facilities.html"> FACILITIES </a></label> </b>
+<b><label style="padding-left:42px"> <a href="contact us.html"> CONTACT US  </a></label> </b>
+</td></tr>
+</table>
+<b><marquee id="welcome"> welcome</marquee></b>
+<div>
+	<div style="height:50%;width:50%;float:left">
+	<p id="p">welcome to <br> <h1> <font color="blue">Matoshri College of Enginering and Research Centre Eklahara,Nashik </font></h1>
+	Matoshri College of Engineering & Research Centre was established in the year 2008 in rural area at Eklahare near Odhagaon under the Matoshri Education Society, Yeola. The core objective of the institute is to provide the quality technical education for the masses to uplift the living standard of the society. Institute offers four year degree courses in Computer Engineering Electronics and Telecommunication Engineering, Information Technology, Mechanical Engineering, Civil Engineering, Electrical Engineering, and Artificial Intelligence and Data Science. The institute runs the two year PG programmes in Computer Engineering, Electronics and Telecommunication Engineering, Mechanical Engineering, Civil Engineering, and Electrical Engineering to promote the research culture. To imbibe the research culture among the students and faculty, institute has established the research centers in Computer Engineering, Electronics and Telecommunication Engineering and Mechanical Engineering. These programmes are approved by All India Council of Technical Education (AICTE) and affiliated to Savitribai Phule Pune University, Pune. It has recognition of 2(F)/12(B) from University Grant Commission (UGC).
+	</p>
+	</div>
+
+	<div style="height:50%;width:50%;float:right">
+	<img src="mcoerc.jpg" style="height:100%;width:100%">
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<html>
+<head>
+<script type="text/javascript"lang="javascript">
+var i=0;
+function changeImage()
+{
+ 
+   var arr=["url('matoshriclg.png')","url('clg3.jpg')","url('clg4.jpg')","url('clg5.jpg')","url('clg6.jpg')","url('clg7.jpg')","url('clg2.jpg')",];
+   
+   var x=document.getElementById('header');
+    //x.style.backgroundRepeat='no-repeat';
+	
+   x.style.backgroundImage=arr[i];
+ x.style.backgroundImage.height="100%";
+	x.style.backgroundImage.width="100%";
+   
+   i++;
+   if(i==7)
+   i=0;
+}
+
+</script>
+<style>
+#demo
+{
+
+height:30%;
+width:20%;
+
+}
+
+
+
+#header{
+height:170px;
+width:100%;
+background-color:pink;
+}
+
+#demo1{
+font-size:40px;
+background-color:gray;
+font-family:'Georgia', serif;
+color:black;
+margin-left:0px;
+}
+#logo{
+height:150px;
+width:150px;
+float:left;
+margin-left:20px;
+margin-top:20px;
+}
+#map{
+height:50px;
+width:50px;
+
+margin-left:70%;
+margin-bottom:0px;
+}
+
+
+</style>
+</head>
+<title> Matoshri college of enginerring  </title>
+<body onload="setInterval(changeImage,1000)">
+<center><i><h1 style="color:maroon;font-size:50px">Matoshri College Of Engineering</h1></i></center>
+<div id="header">
+<img src="logo.png" style="height:150px;width:150px;float:left">
+</div>
+<table >
+<center><b><p id="demo1" >ADMINISTRATION</p></b></center>
+</table>
+<p style="alian-center">
+<p>The admin department is responsible for providing various services and support to stakeholders. To maintain the smooth functioning and appropriate coordination among the various departments admin plays the role as backbone of the institute. Admin is an important constituent of the governance in the institute that comprises of Human Resource Management, Finance and Accounts, Students Support and Central Store.
+</p>
+<hr>
+<p>The Human Resource Section provides a range of operational, advisory and strategic services to develop the employee as well as organization. The main objective of the section is to provide satisfactory and in time service to the stakeholders. The Major responsibility of the section includes the planning, governance, notification and execution for smooth implementation of timely tasks and services. Prof. Dr. Varsha H. Patil, Vice Principal work as a professor coordinator and Mr. Baban T. Nagare works as an Office Superintendent and section head.
+</p>
+<hr>
+<p>The Finance and Account Section are involved in budgetary and monitory provisions needed for the development of institute. Main objective of this section is to provide the satisfactory and in time services to the stakeholders. The major responsibilities of this section includes financial planning and budgeting, funds allocation, salary account maintenance, bill payments, receiving fees and auditing the accounts. This section takes care of student and staff welfare and insurance. This section works as per the guidelines given by governing body.
+</p>
+<hr>
+<p>The Students Support Section is involved in providing necessary services to the students. These services include intimation of student notices, admissions, examination services, query resolutions, scholarship and freeship services; maintain the student records and issuing various certificates on demand. The main objective of this section is to provide the satisfactory and in time services to the students. This section also provides the services to academic departments. Prof. Devidas D. Dighe head of E& TC work as a professor coordinator for the section and Mr. Nitin M. Kumawat work as senior clerk and section head.
+</p>
+<hr>
+<p>The Central Store is involved in providing necessary services to the academic and administrative departments. These services include receiving the requirements, purchase, procurement, facilitating maintenance of equipment’s and appliances and maintain the records and inventory. The main objective of this section is to provide the satisfactory and in time services to departments. Prof. Shridhar S. Khule head Electrical Engineering Dept. work as a professor coordinator for the section and Mr. Ravindra R. Hullule work as storekeeper and section head.
+</p>
+<hr>
+<p>
+<li>All these service providing sections work in strong coordination contributing towards effective and efficient implementation of policies of the institute for the benefit of stakeholders</p>
+</p>
+
+<div style="background-color:gray;height:390px;width:100%">
+	<div>
+	<img src="logo.png" id="logo">
+<a href="map.html"><img src="google_map_logo1.png"style="height:150px;width:150px;margin-top:10px;padding-left:700px;padding-bottom:150px" ></a>
+
+	<table style="margin-left:390px;margin-top:-250px;border:1px solid black;">
+	<tr><td>
+	<b><label> Name <input type="text" value=" "></label></b>
+	</tr></td>
+	<tr><td>
+	<b><label> Email-id <input type="email" value=" " ></label></b>
+	</tr></td>
+	<tr><td>
+	<b><label> mobile no <input type="ten" value=" "></label></b>
+	</tr></td>
+	<tr><td>
+	<label> <input type="submit" value=" submit"></label>
+	</tr></td>
+	</table>
+	</form>
+	</div>
+</div>
+</body>
+</html>

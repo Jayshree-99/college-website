@@ -1,0 +1,73 @@
+<html>
+<head>
+<script type="text/javascript"lang="javascript">
+var i=0;
+function changeImage()
+{
+ 
+   var arr=["url('matoshriclg.png')","url('clg3.jpg')","url('clg4.jpg')","url('clg5.jpg')","url('clg6.jpg')","url('clg7.jpg')","url('clg2.jpg')",];
+   
+   var x=document.getElementById('header');
+    //x.style.backgroundRepeat='no-repeat';
+	
+   x.style.backgroundImage=arr[i];
+ x.style.backgroundImage.height="100%";
+	x.style.backgroundImage.width="100%";
+   
+   i++;
+   if(i==7)
+   i=0;
+}
+
+</script>
+<style>
+
+#table{
+margin-top:10px;
+border:2px;
+}
+
+#header{
+height:170px;
+width:100%;
+background-color:pink;
+}
+#vision{
+font-size:50px;
+background-color:navy;
+font-family:'Georgia', serif;
+color:white;
+padding-left:50px;
+margin-left:40px;
+margin-right:40px;
+margin-top:40px;
+margin-bottom:40px;
+}
+</style>
+</head>
+<title> Matoshri college of enginerring  </title>
+<body onload="setInterval(changeImage,1000)">
+<center><i><h1 style="color:maroon;font-size:50px">Matoshri College Of Engineering</h1></i></center>
+<div id="header">
+<img src="logo.png" style="height:150px;width:150px;float:left">
+</div>
+<table>
+<center><b><p id="vision"> vision & mision </p></b></center>
+</table>
+<table>
+<p id="vision" style="background-color:gray;">vision</p>
+<b style="font-family:Georgia;margin-left:40px">"To Establish Omnipotent Learning Centre Meeting the Standards to Evolve as a Lighthouse for the Society."</b>
+<p id="vision" style="background-color:gray;">mission</p>
+<b style="font-family:Georgia"> 
+<ul>
+<li>Setting up state-of-the-art infrastructure.</li>
+<li>Instilling strong ethical practices and values.</li>
+<li>Empowering through quality technical education.</li>
+<li>Tuning the faculty to modern technology and strong liaison with industry.</li>
+<li>Developing the institute as prominent center for Research and Development.</li>
+<li>Establishing the institute to serve a Lighthouse for the society.</li>
+</ul></b>
+
+</table>
+</body>
+</html>
